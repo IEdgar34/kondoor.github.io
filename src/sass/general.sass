@@ -3,9 +3,11 @@
 @import "_aboutus"
 @import "_values"
 @import "_works"
-@import "products"
-@import "cooperation"
-@import "question"
+@import "_products"
+@import "_cooperation"
+@import "_question"
+@import "_form"
+@import "_footer"
 
 *
     margin: 0
@@ -24,6 +26,7 @@ a
     outline: none
     border: 1px solid #fff
     cursor: pointer
+    
 .btn-white
     padding: 15px 35px 
     background-color: transparent
@@ -59,3 +62,15 @@ footer
 .container
     max-width: 1180px
     margin: 0 auto    
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+ 
+/* Firefox */
+input [type=number]
+  -moz-appearance: textfield
+    
