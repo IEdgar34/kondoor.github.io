@@ -81,8 +81,35 @@
         
         
                 
-
-        
+@media (max-width: 376px)
+    .question
+        padding: 40px 27px
+        &_title
+            font-size: 20px
+            word-spacing: 3px
+        &_wrap
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(4, minmax(48px,auto))
+            transition: grid-template-rows 0.8s 
+        &_text-block
+            transition: 0.5s
+            padding: 10px 2px
+        &_accordeon__title
+            font-size: 16px   
+        .label
+            top: 10px
+            right: 0
+        .check_icon
+            top: 10px
+            right: 0     
+        .accordeon
+            transition: all 0.7s               
+        &_checkbox:checked 
+            ~.accordeon
+                margin-top: 20px
+                opacity: 1
+                scale: 1
+                height: auto     
                 
                   
 

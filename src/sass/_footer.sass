@@ -66,3 +66,49 @@
         display: flex
         gap: 15px
         justify-content: flex-end    
+
+@media (max-width: 376px)
+    .footer
+        padding: 40px 20px
+        &_wrap
+            grid-template-columns: 1fr 
+            grid-template-rows: 1fr 1fr
+        &_logo
+            align-self: start
+            order: -1
+            grid-row: 1/4
+        &_menu
+            padding-top: 20px
+            padding-bottom: 20px
+            justify-self: center
+            text-align: center
+        &_menu__link
+            font-size: 15px
+        &_menu__item
+            padding-top: 15px                     
+        &_social
+            width: 100%
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 75px
+            
+            gap: 0    
+            position: relative
+        &_email
+            position: absolute
+            right: 0
+            top: 21px
+        &_social__img
+            position: absolute
+            right: 0
+            top: 42px
+        &_address
+            grid-row: 1/4
+            height: 75px
+        &_address__link
+            font-size: 14px 
+            text-align: left          
+        &_tel__link
+            font-size: 14px
+        &_email__link
+            font-size: 14px         
